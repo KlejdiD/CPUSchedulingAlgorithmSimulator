@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CPU Scheduling Simulator</h1>
+        
+        <div class="controls">
+            <label for="algorithm">Select Algorithm:</label>
+            <select id="algorithm">
+                <option value="sjf-preemptive">SJF (Preemptive)</option>
+                <option value="sjf-non-preemptive">SJF (Non-Preemptive)</option>
+                <option value="priority-preemptive">Priority (Preemptive)</option>
+                <option value="priority-non-preemptive">Priority (Non-Preemptive)</option>
+            </select>
+        </div>
+
+        <div class="table-input">
+            <h3>Processes</h3>
+            <table id="process-table">
+                <thead>
+                    <tr>
+                        <th>Process ID</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows go here -->
+                </tbody>
+            </table>
+            <button id="add-process">Add Process</button>
+        </div>
+
+        <button id="simulate">Simulate</button>
+        
+        <div class="output">
+            <h3>Gantt Chart</h3>
+            <div id="gantt-chart"></div>
+            <h3>Results</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Klejdi Deli. All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

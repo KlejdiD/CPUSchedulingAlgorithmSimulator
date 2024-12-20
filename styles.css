@@ -1,0 +1,127 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #003366; /* Dark blue text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    min-width: 800px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex: 1; /* Ensure the container takes up available space */
+}
+
+h1 {
+    text-align: center;
+    color: #002244; /* Navy blue */
+}
+
+.controls,
+.table-input,
+.output {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select,
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #007acc; /* Bright blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005b99; /* Darker blue */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #003366; /* Dark blue */
+    color: white;
+}
+
+td input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't overflow the cell */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Gantt chart styling */
+#gantt-chart {
+    display: flex;
+    gap: 2px; /* Space between blocks */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.gantt-block {
+    background-color: #007acc; /* Lighter blue */
+    color: white;
+    padding: 10px 5px;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap; /* Prevent wrapping */
+    flex-shrink: 0; /* Prevent resizing */
+}
+
+
+.results p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border-radius: 4px;
+    margin-top: auto; /* Push footer to the bottom */
+}
